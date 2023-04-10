@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mongodbzeeshanzsh:
+    image: mongo:latest
+    container_name: "mongodbzeeshanzsh"
+    ports:
+      - 27017:27017
+
+  zeeshan-springboot:
+    image: zeeshan-springboot
+    container_name: zeeshan-springboot
+    ports:
+      - "8080:8080"
+    links:
+      - mongodbzeeshanzsh

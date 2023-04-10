@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: Employee
+      host: mongodbzeeshanzsh
+      port: 27017
